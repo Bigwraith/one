@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>列表页</title>
+    <link rel="shortcut icon" href="../icon/favicon.iconn.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/commont.css">
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <!-- 头顶 -->
+        <div class="header-top">
+            <div class="container">
+                <span class="city01">
+                    送货到
+                    <a href="#" class="city-name"><b id="address01"></b></a>
+                    <i class="ico-down"></i>
+                </span>
+
+                <!-- 城市地址 -->
+                <div class="city-address">
+                    <span class="city02">
+                        送货到
+                        <a href="#" class="city-name"><b id="address02"></b></a>
+                        <i class="ico-down"></i>
+                    </span>
+                    <ul id="Culs">
+                        <li><a href="#">湖南</a></li>
+                        <li><a href="#">湖北</a></li>
+                        <li><a href="#">河南</a></li>
+                        <li><a href="#">江西</a></li>
+                        <li><a href="#">陕西</a></li>
+                        <li><a href="#">山西</a></li>
+                        <li><a href="#">河北</a></li>
+                        <li><a href="#">天津</a></li>
+                        <li><a href="#">北京</a></li>
+                        <li><a href="#">黑龙江</a></li>
+                        <li><a href="#">安徽</a></li>
+                        <li><a href="#">四川</a></li>
+                        <li><a href="#">贵州</a></li>
+                        <li><a href="#">云南</a></li>
+                        <li><a href="#">西藏</a></li>
+                        <li><a href="#">新疆</a></li>
+                        <li><a href="#">内蒙古</a></li>
+                        <li><a href="#">广西</a></li>
+                        <li><a href="#">广东</a></li>
+                        <li><a href="#">福建</a></li>
+                        <li><a href="#">浙江</a></li>
+                        <li><a href="#">江苏</a></li>
+                        <li><a href="#">辽宁</a></li>
+                        <li><a href="#">山东</a></li>
+                        <li><a href="#">吉林</a></li>
+                        <li><a href="#">重庆</a></li>
+                        <li><a href="#">海南</a></li>
+                        <li><a href="#">青海</a></li>
+                        <li><a href="#">甘肃</a></li>
+                        <li><a href="#">上海</a></li>
+                        <li><a href="#">宁夏</a></li>
+                    </ul>
+                </div>
+
+                <dl>
+                    <span id="username">
+                        欢迎来到乐峰，请
+                        <a href="login.html">登录</a>
+                        |
+                        <a href="reg.html">免费注册</a>
+                    </span>
+                    <span>
+                        我的订单
+                        <i class="ico-down"></i>
+                        <!-- 我的订单 -->
+                        <div class="myorder">
+                            <ul>
+                                <li><a href="">我的钱包</a></li>
+                                <li><a href="">我的礼券</a></li>
+                            </ul>
+                        </div>
+                    </span>
+                    <span class="fasts">
+                        快速导航
+                        <i class="ico-down"></i>
+                    </span>
+                    <span>
+                        收藏乐峰
+                    </span>
+                    <span class="tel01">
+                        <i class="ico-phone"></i>
+                        <a href="#">
+                            手机乐峰
+                        </a>
+                    </span>
+                </dl>
+                <!-- 快速导航副级 -->
+                <div class="quick">
+                    <a href="#">帮助中心</a>
+                    <a href="#">联系客服</a>
+                    <a href="#">商业合作</a>
+                    <h6>
+                        <img src="../img/wx_icon.jpg" alt="">
+                        <a>惊喜马上来</a>
+                    </h6>
+                    <span class="fast">
+                        快速导航
+                        <i class="ico-down"></i>
+                    </span>
+                </div>
+                <!-- 手机乐峰副级 -->
+                <div class="phone">
+                    <span class="tel02">
+                        <i class="ico-phone"></i>
+                        <a href="#">
+                            手机乐峰
+                        </a>
+                    </span>
+                    <p>
+                        <img src="../img/erweima.png" alt="" srcset="">
+                    </p>
+                    <p>
+                        <i class="apple"></i>
+                        <i class="android"></i>
+                        客服端
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 头中 -->
+        <div class="header-main">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="../index.html" style="display:inline-block; height:100%; width:100%"></a>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search">
+                    <p>
+                        <input type="text" placeholder="韩束集团" id="search-inp">
+                        <span class="search-sumbit" id="search-sumbit">搜索</span>
+                    </p>
+                    <!-- 热门标签 -->
+                    <p>
+                        <span>热门 :</span>
+                        <a href="#">韩束集团</a>
+                        <a href="#">洁面</a>
+                        <a href="#">口红</a>
+                        <a href="#">眼霜</a>
+                    </p>
+                </div>
+                <!-- 购物车 -->
+                <div class="carts01">
+                    <span id="num01">0</span>
+                </div>
+                <div class="carts02">
+                    <span id="num02">0</span>
+                    <div class="shopping-lists">
+                        <div class="nohas">
+                            您的购物车还没有商品赶紧去选购吧！
+                        </div>
+                        <div class="has">
+                            <table>
+                                <tbody id="has_tbody">
+                                    <!-- <tr>
+                                        <td>
+                                            <a href="#">
+                                                <img src="img/G01.jpg" alt="" style="width: 53px;height: 67px;border: 1px solid #f3f3f3;">
+                                            </a>
+                                        </td>
+                                        <td>
+                                            一叶子【国民补水干货】一叶子 嫩花果亮颜补水面膜礼盒22片 补水面膜套装
+                                        </td>
+                                        <td>
+                                            <b>￥45</b>×1
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class="hasfoot">
+                                <p>共<b id="num03"></b>件商品</p>
+                                <p>
+                                    共计：<b id="total"></b> 
+                                </p>
+                                <p ><a href="#" id="go_cart">去购物车结算</a> </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="header-nav">
+            <div class="container">
+                <!-- 商品分类菜单 -->
+                <div class="nav-menu">
+                    商品分类
+                    <i class="ico-up"></i>
+                </div>
+                <!-- 中间菜单 -->
+                <div class="nav-main">
+                    <a href="javascript:;">首页</a>
+                    <a href="javascript:;">峰购全球</a>
+                </div>
+                <!-- 导航尾部小图标 -->
+                <div class="nav-ico">
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </div>
+                <!-- 下拉菜单 -->
+                <div class="float-menu" id="menus">
+                    <!-- 护肤用品 -->
+                    <dl>
+                        <dt>
+                            <i class="ico-hufu"></i>
+                            <span>护肤用品</span>
+                        </dt>
+                        <dd><a href="javascript:;">面膜</a></dd>
+                        <dd><a href="javascript:;">防晒隔离</a></dd>
+                        <dd><a href="javascript:;">护肤套装</a></dd>
+                        <dd><a href="javascript:;">洁面</a></dd>
+                        <dd><a href="javascript:;">面部护肤</a></dd>
+                        <dd><a href="javascript:;">眼部护理</a></dd>
+                        <!-- 护肤用品副级 -->
+                        <div class="hufu-main">
+                            <ul class="hufu-main-one">
+                                <li>
+                                    <dt><a href="javascript:;">面膜 ></a></dt>
+                                    <dd><a href="javascript:;">面膜贴</a>
+                                        <a href="javascript:;">免洗面膜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">泥膜</a>
+                                        <a href="javascript:;">泡泡面膜</a>
+                                        <a href="javascript:;">鼻膜鼻贴</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">护肤套装 ></a></dt>
+                                    <dd><a href="javascript:;">护肤套装</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">面部护肤 ></a></dt>
+                                    <dd><a href="javascript:;">面霜</a>
+                                        <a href="javascript:;">乳液</a>
+                                        <a href="javascript:;">爽肤水</a>
+                                        <a href="javascript:;">精华</a>
+                                        <a href="javascript:;">喷雾</a></dd>
+                                </li>
+                            </ul>
+                            <ul class="hufu-main-two">
+                                <li>
+                                    <dt><a href="javascript:;">防晒隔离 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">防晒乳</a>
+                                        <a href="javascript:;">防晒喷雾</a>
+                                        <a href="javascript:;">隔离乳</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">洁面 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">洁面乳</a>
+                                        <a href="javascript:;">洁面膏</a>
+                                        <a href="javascript:;">洁面皂</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">眼部护理 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">眼霜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">眼部精华</a>
+                                        <a href="javascript:;">眼部护理套装</a>
+                                    </dd>
+                                </li>
+                            </ul>
+                        </div>
+                    </dl>
+                    <!-- 彩妆用品 -->
+                    <dl>
+                        <dt>
+                            <i class="ico-caizhuang"></i>
+                            <span>彩妆用品</span>
+                        </dt>
+                        <dd><a href="javascript:;">底妆</a></dd>
+                        <dd><a href="javascript:;">眼妆</a></dd>
+                        <dd><a href="javascript:;">唇妆</a></dd>
+                        <dd><a href="javascript:;">卸妆</a></dd>
+                        <dd><a href="javascript:;">美甲</a></dd>
+                        <dd><a href="javascript:;">彩妆套装</a></dd>
+                        <!-- 彩妆用品副级 -->
+                        <div class="cosmetic-main">
+                            <ul class="cosmetic-main-one">
+                                <li>
+                                    <dt><a href="javascript:;">面膜 ></a></dt>
+                                    <dd><a href="javascript:;">面膜贴</a>
+                                        <a href="javascript:;">免洗面膜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">泥膜</a>
+                                        <a href="javascript:;">泡泡面膜</a>
+                                        <a href="javascript:;">鼻膜鼻贴</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">护肤套装 ></a></dt>
+                                    <dd><a href="javascript:;">护肤套装</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">面部护肤 ></a></dt>
+                                    <dd><a href="javascript:;">面霜</a>
+                                        <a href="javascript:;">乳液</a>
+                                        <a href="javascript:;">爽肤水</a>
+                                        <a href="javascript:;">精华</a>
+                                        <a href="javascript:;">喷雾</a></dd>
+                                </li>
+                            </ul>
+                            <ul class="cosmetic-main-two">
+                                <li>
+                                    <dt><a href="javascript:;">防晒隔离 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">防晒乳</a>
+                                        <a href="javascript:;">防晒喷雾</a>
+                                        <a href="javascript:;">隔离乳</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">洁面 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">洁面乳</a>
+                                        <a href="javascript:;">洁面膏</a>
+                                        <a href="javascript:;">洁面皂</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">眼部护理 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">眼霜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">眼部精华</a>
+                                        <a href="javascript:;">眼部护理套装</a>
+                                    </dd>
+                                </li>
+                            </ul>
+                        </div>
+                    </dl>
+                    <!-- 美容工具 -->
+                    <dl>
+                        <dt>
+                            <i class="ico-meirong"></i>
+                            <span>美容工具</span>
+                        </dt>
+                        <dd><a href="javascript:;">美容工具</a></dd>
+                        <dd><a href="javascript:;">美妆工具</a></dd>
+                        <dd><a href="javascript:;">美发工具</a></dd>
+                        <dd><a href="javascript:;">美甲工具</a></dd>
+                        <dd><a href="javascript:;">洁面工具</a></dd>
+                        <dd><a href="javascript:;">化妆工具</a></dd>
+                        <!-- 美容工具副级 -->
+                        <div class="cosmetology-main">
+                            <ul class="cosmetology-main-one">
+                                <li>
+                                    <dt><a href="javascript:;">面膜 ></a></dt>
+                                    <dd><a href="javascript:;">面膜贴</a>
+                                        <a href="javascript:;">免洗面膜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">泥膜</a>
+                                        <a href="javascript:;">泡泡面膜</a>
+                                        <a href="javascript:;">鼻膜鼻贴</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">护肤套装 ></a></dt>
+                                    <dd><a href="javascript:;">护肤套装</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">面部护肤 ></a></dt>
+                                    <dd><a href="javascript:;">面霜</a>
+                                        <a href="javascript:;">乳液</a>
+                                        <a href="javascript:;">爽肤水</a>
+                                        <a href="javascript:;">精华</a>
+                                        <a href="javascript:;">喷雾</a></dd>
+                                </li>
+                            </ul>
+                            <ul class="cosmetology-main-two">
+                                <li>
+                                    <dt><a href="javascript:;">防晒隔离 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">防晒乳</a>
+                                        <a href="javascript:;">防晒喷雾</a>
+                                        <a href="javascript:;">隔离乳</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">洁面 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">洁面乳</a>
+                                        <a href="javascript:;">洁面膏</a>
+                                        <a href="javascript:;">洁面皂</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">眼部护理 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">眼霜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">眼部精华</a>
+                                        <a href="javascript:;">眼部护理套装</a>
+                                    </dd>
+                                </li>
+                            </ul>
+                        </div>
+                    </dl>
+                    <!-- 香水香氛 -->
+                    <dl class="perfume">
+                        <dt>
+                            <i class="ico-xiangshui"></i>
+                            <span>香水香氛</span>
+                        </dt>
+                        <dd><a href="javascript:;">香水套装</a></dd>
+                        <dd><a href="javascript:;">女士香水</a></dd>
+                        <dd><a href="javascript:;">男士香水</a></dd>
+                        <dd><a href="javascript:;">淡香水</a></dd>
+                        <dd><a href="javascript:;">香氛精油</a></dd>
+                        <dd><a href="javascript:;">走珠香水</a></dd>
+                        <!-- 香水香氛副级 -->
+                        <div class="perfume-main">
+                            <ul class="perfume-main-one">
+                                <li>
+                                    <dt><a href="javascript:;">面膜 ></a></dt>
+                                    <dd><a href="javascript:;">面膜贴</a>
+                                        <a href="javascript:;">免洗面膜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">泥膜</a>
+                                        <a href="javascript:;">泡泡面膜</a>
+                                        <a href="javascript:;">鼻膜鼻贴</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">护肤套装 ></a></dt>
+                                    <dd><a href="javascript:;">护肤套装</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">面部护肤 ></a></dt>
+                                    <dd><a href="javascript:;">面霜</a>
+                                        <a href="javascript:;">乳液</a>
+                                        <a href="javascript:;">爽肤水</a>
+                                        <a href="javascript:;">精华</a>
+                                        <a href="javascript:;">喷雾</a></dd>
+                                </li>
+                            </ul>
+                            <ul class="perfume-main-two">
+                                <li>
+                                    <dt><a href="javascript:;">防晒隔离 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">防晒乳</a>
+                                        <a href="javascript:;">防晒喷雾</a>
+                                        <a href="javascript:;">隔离乳</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">洁面 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">洁面乳</a>
+                                        <a href="javascript:;">洁面膏</a>
+                                        <a href="javascript:;">洁面皂</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">眼部护理 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">眼霜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">眼部精华</a>
+                                        <a href="javascript:;">眼部护理套装</a>
+                                    </dd>
+                                </li>
+                            </ul>
+                        </div>
+                    </dl>
+                    <!-- 个人护理 -->
+                    <dl class="oneself">
+                        <dt>
+                            <i class="ico-geren"></i>
+                            <span>个人护理</span>
+                        </dt>
+                        <dd><a href="javascript:;">头发护理</a></dd>
+                        <dd><a href="javascript:;">身体护理</a></dd>
+                        <dd><a href="javascript:;">口腔护理</a></dd>
+                        <dd><a href="javascript:;">手足护理</a></dd>
+                        <dd><a href="javascript:;">美体瘦身</a></dd>
+                        <dd><a href="javascript:;">胸部护理</a></dd>
+                        <!-- 个人护理副级 -->
+                        <div class="oneself-main">
+                            <ul class="oneself-main-one">
+                                <li>
+                                    <dt><a href="javascript:;">面膜 ></a></dt>
+                                    <dd><a href="javascript:;">面膜贴</a>
+                                        <a href="javascript:;">免洗面膜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">泥膜</a>
+                                        <a href="javascript:;">泡泡面膜</a>
+                                        <a href="javascript:;">鼻膜鼻贴</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">护肤套装 ></a></dt>
+                                    <dd><a href="javascript:;">护肤套装</a></dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">面部护肤 ></a></dt>
+                                    <dd><a href="javascript:;">面霜</a>
+                                        <a href="javascript:;">乳液</a>
+                                        <a href="javascript:;">爽肤水</a>
+                                        <a href="javascript:;">精华</a>
+                                        <a href="javascript:;">喷雾</a></dd>
+                                </li>
+                            </ul>
+                            <ul class="oneself-main-two">
+                                <li>
+                                    <dt><a href="javascript:;">防晒隔离 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">防晒乳</a>
+                                        <a href="javascript:;">防晒喷雾</a>
+                                        <a href="javascript:;">隔离乳</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">洁面 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">洁面乳</a>
+                                        <a href="javascript:;">洁面膏</a>
+                                        <a href="javascript:;">洁面皂</a>
+                                    </dd>
+                                </li>
+                                <li>
+                                    <dt><a href="javascript:;">眼部护理 ></a></dt>
+                                    <dd>
+                                        <a href="javascript:;">眼霜</a>
+                                        <a href="javascript:;">眼膜</a>
+                                        <a href="javascript:;">眼部精华</a>
+                                        <a href="javascript:;">眼部护理套装</a>
+                                    </dd>
+                                </li>
+                            </ul>
+                        </div>
+                    </dl>
+                    <a href="javascript:;" class="ico-xia"></a>
+                    <a href="javascript:;" class="shopping-lists-all">查看全部分类>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 中间 -->
+    <div id="center">
+        <div class="container">
+            <!-- 头部检索部分 -->
+            <div class="center_search" id="center_search">
+                <h3>
+                    全部
+                    <i> > </i>
+                    <span class="tag"></span>
+                </h3>
+                <!-- 头部主要内容 -->
+                <div class="search_main">
+                    <dl class="search_dl01">
+                        <dt> <b>品牌：</b> </dt>
+                        <dd>
+                            <div class="brand-list" id="brand-list">
+                                <div id="blists">
+                                    <a href="#">
+                                        <img src="../img/afu.jpg" alt="" name="阿芙">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baiqueling.png" alt="" name="百雀羚">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baicaoji.png" alt="" name="佰草集">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/beijiasi.jpg" alt="" name="贝佳斯">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/oubiquan.png" alt="" name="欧碧泉">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/bomei.jpg" alt="" name="泊美">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/afu.jpg" alt="" name="阿芙">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baiqueling.png" alt="" name="百雀羚">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baicaoji.png" alt="" name="佰草集">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/beijiasi.jpg" alt="" name="贝佳斯">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/oubiquan.png" alt="" name="欧碧泉">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/bomei.jpg" alt="" name="泊美">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="" name="菲诗小铺">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/afu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baiqueling.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baicaoji.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/beijiasi.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/oubiquan.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/bomei.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/afu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baiqueling.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baicaoji.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/beijiasi.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/oubiquan.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/bomei.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/afu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baiqueling.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/baicaoji.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/beijiasi.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/oubiquan.png" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/bomei.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                    <a href="#">
+                                        <img src="../img/feishixiaopu.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="scroll-right" id="scroll-right">
+                                    <div class="scroll-more" id="scroll-more"></div>
+                                </div>
+                            </div>
+                            <span class="more_list">
+                                更多
+                                <i class="ico-down"></i>
+                            </span>
+                            <span class="pick_up">
+                                收起
+                                <i class="ico-up"></i>
+                            </span>
+                            <span class="more_add"></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt> <b>价格：</b> </dt>
+                        <dd>
+                            <div class="mod">
+                                <span><a href="javascript:;">10-19元<i> ()</i></a></span>
+                                <span><a href="javascript:;">20-39元<i> ()</i></a></span>
+                                <span><a href="javascript:;">40-59元<i> ()</i></a></span>
+                                <span><a href="javascript:;">60-79元<i> ()</i></a></span>
+                                <span><a href="javascript:;">80-99元<i> ()</i></a></span>
+                                <span><a href="javascript:;">100-199元<i> ()</i></a></span>
+                                <span><a href="javascript:;">200-399元<i> ()</i></a></span>
+                                <span><a href="javascript:;">400-599元<i> ()</i></a></span>
+                                <span><a href="javascript:;">600-999元<i> ()</i></a></span>
+                                <span><a href="javascript:;">1000-1999元<i> ()</i></a></span>
+                                <span><a href="javascript:;">2000元以上<i> ()</i></a></span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><b>折扣：</b> </dt>
+                        <dd>
+                            <div class="disc">
+                                <span><a href="script:;">1-2折<i> ()</i></a></span>
+                                <span><a href="script:;">2-3折<i> ()</i></a></span>
+                                <span><a href="script:;">3-4折<i> ()</i></a></span>
+                                <span><a href="script:;">4-5折<i> ()</i></a></span>
+                                <span><a href="script:;">5-6折<i> ()</i></a></span>
+                                <span><a href="script:;">6-7折<i> ()</i></a></span>
+                                <span><a href="script:;">7-8折<i> ()</i></a></span>
+                                <span><a href="script:;">8-9折<i> ()</i></a></span>
+                                <span><a href="script:;">9折以上<i> ()</i></a></span>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- 头部的尾巴 -->
+                <div class="search_footer" id="sfooter">
+                    <!-- 默认 -->
+                    <div class="order order01"><span>默认</span></div>
+                    <!-- 价格 -->
+                    <div class="order order02" id="order02">
+                        <span>价格<i class="ico-down"></i></span>
+                        <!-- 价格副级 -->
+                        <div class="order02_f" id="order02_f">
+                            <ul>
+                                <li class="select" id="price_down">价格从高到低 <i class="ico-down"></i></li>
+                                <li id="price_up">价格从低到高 <i class="ico-up"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 销量 -->
+                    <div class="order order03" id="order03">
+                        <span>销量<i class="ico-down"></i></span>
+                        <!-- 销量副级 -->
+                        <div class="order03_f" id="order03_f">
+                            <ul>
+                                <li>销量从高到低 <i class="ico-down"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 只看在售商品 -->
+                    <div class="order order04">
+                        <i class="check" id="ord4_check"></i>
+                        只看在售销量
+                    </div>
+                </div>
+            </div>
+            <div class="show_goods" id="show_goods">
+                <div class="showbox" id="showbox">
+                    <ul id="goodUls">
+                        <!-- 商品数据 -->
+                        <!-- <div class="libox">
+                        <li>
+                            <p>
+                                <img src="../img/list01.jpg" alt="">
+                                
+                            </p>
+                            <p> 佰草集【深层净化 温和服贴】佰草集菁萃原液面膜14片（玫瑰面膜7片+枸杞面膜7片+金盏花惠享装） 均码 </p>
+                            <p>
+                                <span><i>￥</i> 149.0</span>
+                                <span>(5.6折)</span>
+                                <span>￥268.0</span>
+                            </p>
+                            <p>
+                                <span>加入购物车</span>
+                            </p>
+                        </li> -->
+                        <!-- 商品标签 -->
+                        <!-- <div class="littlt-tag">
+                                <ul>
+                                    <li>清洁</li>
+                                </ul>
+                        </div>
+                        </div> -->
+
+                    </ul>
+                    <!-- 下一页 -->
+                    <dl id="big_next">
+                        <dd><a href="#"></a></dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 按钮 -->
+            <div class="goods_page">
+                <span class="page_left" id="btn_prev">
+                    <</span> <div class="pages" id="pages">
+                        <!-- <span class="goods_qty"><a href="#">1</a> </span>
+                        <span><a href="#">2</a></span>
+                        <span><a href="#">3</a></span>
+                        <span><a href="#">4</a></span> -->
+            </div>
+            <span class="page_right" id="btn_next">></span>
+        </div>
+    </div>
+    </div>
+
+    <!-- 加入购物车成功 -->
+    <div class="addsucces" id="addsucces">
+        <div class="sum">
+            <h3>该商品已成功放入购物车</h3>
+
+            <p>
+                <a href="cart.html" class="pay" id="pay"></a>
+                <a href="../index.html">
+                    << 继续购物 </a> </p> <i class="ico-succ"></i>
+        </div>
+        <i class="ico-close"></i>
+    </div>
+
+    <!-- 尾部 -->
+    <div id="bottom" style="margin-top:80px;margin-bottom:0px;">
+        <div class="container">
+            <!-- 服务 尾头 -->
+            <div class="btm-m-one">
+                <ul>
+                    <!-- 免运费 -->
+                    <li class="server01"></li>
+                    <!-- 全正品 -->
+                    <li class="server02"></li>
+                    <!-- 最放心 -->
+                    <li class="server03"></li>
+                </ul>
+            </div>
+            <!-- 中间内容 尾中 -->
+            <div class="btm-m-two">
+                <div class="btm-logo">
+                    <p></p>
+                    <p>客服 9:00-24:00</p>
+                </div>
+                <div class="btm-main">
+                    <dl>
+                        <dt>新手指南</dt>
+                        <dd><a href="javascrtip:;">购物流程</a></dd>
+                        <dd><a href="javascrtip:;">优惠券规则</a></dd>
+                        <dd><a href="javascrtip:;">联系客服</a></dd>
+                        <dd><a href="javascrtip:;">常见问题</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>付款方式</dt>
+                        <dd><a href="javascrtip:;">在线支付</a></dd>
+                        <dd><a href="javascrtip:;">货到付款</a></dd>
+                        <dd><a href="javascrtip:;">钱包支付</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd><a href="javascrtip:;">配送时效及运费</a></dd>
+                        <dd><a href="javascrtip:;">验货与签收</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>售后服务</dt>
+                        <dd><a href="javascrtip:;">退货政策</a></dd>
+                        <dd><a href="javascrtip:;">退货流程</a></dd>
+                        <dd><a href="javascrtip:;">退款方式及时效</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>乐蜂网微信</dt>
+                        <dd class="lefeng-erweima"></dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 尾尾 -->
+            <div class="btm-m-three">
+                <p class="btm-about">
+                    <a href="javascript:;">关于乐峰</a>
+                    <a href="javascript:;">免责声明</a>
+                    <a href="javascript:;">隐私声明</a>
+                    <a href="javascript:;">版权声明</a>
+                    <a href="javascript:;">招聘信息</a>
+                    <a href="javascript:;">联系我们</a>
+                    <a href="javascript:;">帮助中心</a>
+                    <a href="javascript:;">友情链接</a>
+                </p>
+                <p>
+                    <span>Copyright © 2008-2016 Lefeng.com All Rights Reserved. </span>
+                    <span>天津品简电子商务有限公司</span>
+                    <span><a href="#">津ICP备15005555号-1</a></span>
+                    <span>
+                        <img src="../img/beian.png" alt="" srcset="">
+                        京公网安备11010502034938号
+                    </span>
+                    <span><a href="#">营业执照</a></span>
+                </p>
+                <p>
+                    <span>公司全称：天津品简电子商务有限公司</span>
+                    <span>公司固话：400 000 1818</span>
+                    <span>公司地址：天津市武清区京津电子商务产业园宏瑞道18号</span>
+                </p>
+                <p>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                    <a href="javascript:;"></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../lib/jquery-1.12.3.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/header.js" type="text/javascript"></script>
+<script src="../js/list.js"></script>
+
+</html>

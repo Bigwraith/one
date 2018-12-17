@@ -1,0 +1,477 @@
+@charset "utf-8";
+
+/*进度*/ 
+.progress{
+    float: right;
+    width: 487px;
+    height: 98px;
+    margin-top: 25px;
+    background: url(../img/build.jpg) 0px 0px;
+}
+
+/*中间*/ 
+#Cmain{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    clear: both;
+    background: #fff;
+
+    .cart_top{
+        width: 100%;
+        height: 38px;
+        background: #f9f9f9;
+        border: 1px solid #dfdfdf;
+        line-height: 36px;
+        color: #f52648;
+        font-size: 14px;
+        border-left: 2px solid #f52648;
+        font-family: '\5FAE\8F6F\96C5\9ED1';
+        box-sizing: border-box;
+        
+    }
+    /*商品列表*/
+    .cart_list{
+        border: 1px solid #dfdfdf;
+        color: #666;
+    }
+    table{
+        width: 100%;
+        margin: 0px 10px;
+        text-align: center;
+        th{
+            font-weight: normal;
+        }
+        td{
+            height: 90px; 
+            font-size: 12px;
+            padding: 20px 0px;
+        }
+        .t01{
+            width: 46%;
+            text-align: left;
+            .photo{
+                float: left;
+                width: 58px;
+                height: 74px;
+                text-align: center;
+                box-shadow: 0 1px 2px #dfdfdf;
+                margin-right: 10px;
+                position: relative;
+                .smallimg{
+                    position: absolute;
+                    top: 0;
+                    left: 67px;
+                    width: 194px;
+                    height: 244px;
+                    border: 1px solid #dbdada;
+                    background: #fff;
+                    box-shadow: 0 1px 2px #dfdfdf;
+                    z-index: 5;
+                    display: none;
+                }
+            }
+            
+            .tiptitle{
+                float: left;
+                width: 250px;
+                height: 65px;
+                margin-left: 30px;
+                border-collapse: collapse;
+                border-spacing: 0;
+                // margin-top: 10px;
+                font-size: 13px;
+                .name{
+                    width: 250px;
+                    height: 40px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    margin-top: 5px;
+                }
+                .size{
+                    width: 250px;
+                    height: 20px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .t02{
+            width: 12%;
+            .now_price{
+                color: #333;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .old_price{
+                color: #999;
+                text-decoration: line-through;
+            }
+        }
+        .t03{
+            width: 15%;
+            .quantity{
+                width: 80px;
+                height: 24px;
+                color: #aaa;
+                font-size: 18px;
+                text-align: center;
+                margin-left: 40px;
+                .plus,.sub{
+                    float: left;
+                    width: 23px;
+                    height: 22px;
+                    border: 1px solid #e3e2e2;
+                    font-weight: bold;
+                    line-height: 22px;
+                    cursor: pointer;
+                    &:hover{
+                        color: #666;
+                    }
+                }
+                textarea{
+                    float: left;
+                    width: 28px;
+                    height: 22px;
+                    line-height: 22px;
+                    text-align: center;
+                    border: 1px solid #e3e2e2;
+                }
+            }
+        }
+        .t04{
+            width: 15%;
+            color: red;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .t05{
+            width: 12%;
+            a{
+                cursor: pointer;
+                color: #464646;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }  
+        }
+    }
+    /*运费*/
+    .cart_active{
+        width: 100%;
+        height: 55px;
+        line-height: 21px;
+        font-size: 14px;
+        padding: 20px 0px 20px 10px;
+        border: 1px solid #e3e2e2;
+        box-sizing: border-box;
+        background: #f9f9f9;
+        color: #666;
+        .yun{
+            height: 24px;
+            line-height: 24px;
+            background: #999;
+            padding: 5px 15px;
+            color: #fff;
+            margin-right: 15px;
+        }
+    }
+
+    /*底部 */
+    .cart_bottom{
+        position: relative;
+        border: 1px solid #ecebeb;
+        z-index: 3;
+        margin: 20px 0;
+        overflow: hidden;
+        background: #fdfcf8;
+        /*卡券*/
+        .cart_kaquan01{
+            font-size: 16px;
+            z-index: 2;
+            margin: 15px 15px 0px 15px;
+            line-height: 22px;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            height: 37px;
+            border-bottom: 1px dotted #cccbc6;
+            width: 968px;
+            color: #c6c6c6;
+            font-size: 14px;
+            .ka_m01{
+                   color: #f63353;
+                    height: 22px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                    font-size: 16px;
+                    .kaq{
+                        color: #f63353;
+                        height: 22px;
+                        font-weight: bold;
+                        margin-right: 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        i{
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            background: url(../img/jjj.jpg) no-repeat 0px -35px;
+                        }
+                        .ico-jj{
+                            display: inline-block;
+                            width: 14px;
+                            height: 14px;
+                            background: url(../img/jjj.jpg) no-repeat 0px -18px;
+                        }
+                        
+                    } 
+                    
+                    span{
+                        color: #c6c6c6;;
+                        font-size: 14px;
+                        font-weight: normal;
+                        margin-left: 15px;
+                        .ico-n01{
+                            color: red;
+                        }
+                    }
+
+                
+            }
+        }
+        /*激活卡券*/
+        .cart_kaquan02{
+            background: #fdfcf8;
+            padding: 0 28px;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            border-bottom: 1px solid #ecebeb;
+            color: #333;
+            padding-bottom: 60px;
+            .ka_m02{
+                height: 32px;
+                padding: 25px 0 20px 0;
+                font-size: 16px;
+                border-bottom: 1px dotted #cdcdcd;
+                overflow: hidden;
+                label{
+                    margin-right: 10px;
+                    float: left;
+                    line-height: 32px;
+                }
+                .youhuiquan{
+                    background: #fff;
+                    padding: 0 12px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #ecebeb;
+                    display: inline-block;
+                    margin-right: 10px;
+                    float: left;
+                    font-size: 14px;
+                }
+                input{
+                    color: #d6d6d6;
+                    width: 210px;
+                    padding-left: 8px;
+                    height: 30px;
+                    line-height: 30px;
+                    border: 1px solid #ecebeb;
+                    background: #fff;
+                    float: left;
+                    font-size: 12px;
+                }
+                .jihuo{
+                    display: inline-block;
+                    background: #d0d0d0;
+                    color: #555;
+                    border: none;
+                    width: 88px;
+                    height: 32px;
+                    line-height: 32px;
+                    text-align: center;
+                    vertical-align: middle;
+                    float: left;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+            }
+            .ka_box{
+                margin-top: 20px;
+                .ka_box_tit{
+                    height: 47px;
+                    border-bottom: 1px solid #d7d7d7;
+                    line-height: 46px;
+                    ul{
+                        float: left;
+                        border-left: 1px solid #d7d7d7;
+                        overflow: hidden;
+                        font-size: 16px;
+                        li{
+                            float: left;
+                            width: 164px;
+                            text-align: center;
+                            background: #f4f3f2;
+                            border: 1px solid #d7d7d7;
+                            margin-left: -1px;
+                            cursor: pointer;
+                            position: relative;
+                            i{
+                                color: red;
+                            }
+                        }
+                        .cur{
+                            background: #fff;
+                            border-bottom: 1px solid #fff;
+                            font-weight: bold;
+                        }
+                        
+                    }
+                    p{
+                        float: right;
+                        color: #646464;
+                        font-size: 12px;
+                    }
+                }
+                .ka_box_m{
+                    padding: 20px 45px;
+                    border: 1px solid #d7d7d7;
+                    background: #fff;
+                    border-top: none;
+                    p:nth-child(1){
+                        padding-top: 10px;
+                        height: 30px;
+                        line-height: 30px;
+                    }
+                    p:nth-child(2){
+                        width: 100%;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                        color: #464646;
+                        text-align: center;
+                        .ico-gantanhao{
+                            display: inline-block;
+                            width: 25px;
+                            height: 25px;
+                            background: url(../img/gantanhao.jpg) no-repeat -98px 0px;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                        }
+                        span{
+                            text-align: center;
+                            height: 50px;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        /*商品总数*/
+        .cart_kaquan03{
+            width: 100%;
+            overflow: hidden;
+            color: #525252;
+            font-size: 13px;
+            ul{
+                width: 220px;
+                margin-right: 40px;
+                float: right;
+                li{
+                    height: 40px;
+                    line-height: 38px;
+                    overflow: hidden;
+                    .fl{
+                        float: left;
+                        b{
+                            color: #f52648;
+                        }
+                    }
+                    .fr{
+                        float: right;
+                        .u-yen{
+                            color: #f52648;
+                            font-size: 14px;
+                            font-weight: normal;
+                            font-family: Arial;
+                            padding: 0 2px;
+                        }
+                        .u-price{
+                            color: #f52648;
+                            font-size: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        /*运费费用*/
+        .cart_bt{
+            background: #fff;
+            border-top: 1px solid #dfdfdf;
+            height: auto;
+            overflow: hidden;
+            clear: both;
+            ul{
+                width: 220px;
+                margin-right: 40px;
+                float: right;
+                li{
+                    height: 78px;
+                    line-height: 78px;
+                    .fl{
+                        float: left;
+                    }
+                    .fr{
+                        float: right;
+                        .u-yen{
+                            color: #f52648;
+                            font-size: 14px;
+                            font-weight: normal;
+                            font-family: Arial;
+                            padding: 0 2px;
+                        }
+                        .u-price{
+                            color: #f52648;
+                            font-size: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+        /*总结算*/
+        .cart_pay{
+            width: 100%;
+            height: 48px;
+            background: #f3f3f3;
+            border-top: 1px solid #ecebeb;
+            line-height: 48px;
+            font-size: 14px;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            position: relative;
+            .fl{
+                margin-left: 25px;
+                z-index: 6;
+                position: absolute;
+                float: left;
+                a{
+                    margin: 0px 10px;
+                    color: #666;
+                }
+            }
+            .fr{
+                float: right;
+                input{
+                    width: 200px;
+                    height: 48px;
+                    float: right;
+                    cursor: pointer;
+                    background: #f52648;
+                    border: none;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: "\5FAE\8F6F\96C5\9ED1";
+                }
+            }
+        }
+    }
+}

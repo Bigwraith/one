@@ -1,0 +1,252 @@
+@charset "UTF-8";
+body {
+  background: url(../img/login-bk.jpg) no-repeat center top #fbe1d3;
+  min-height: 100%;
+}
+
+/*中间*/
+#main {
+  width: 100%;
+  height: 685px;
+  margin-top: -79px;
+}
+
+#main .m-box {
+  float: right;
+  width: 420px;
+  height: 685px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #ccc;
+  /*注册标题头*/
+  /*注册相关内容*/
+  /*第三方合作账号*/
+}
+
+#main .m-box div {
+  margin: 25px 60px 20px 60px;
+}
+
+#main .m-box .login-tilte {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #333;
+  font-family: 黑体;
+}
+
+#main .m-box .login-tilte span:nth-child(1) {
+  float: left;
+  width: 100px;
+  height: 36px;
+  background: url(../img/reg-jinglingtu.jpg) no-repeat 0px -68px;
+}
+
+#main .m-box .login-tilte span:nth-child(2) {
+  float: right;
+}
+
+#main .m-box .login-tilte span:nth-child(2) a {
+  color: #02b1cb;
+  margin-left: -10px;
+}
+
+#main .m-box .login-tilte span:nth-child(2) a:hover {
+  text-decoration: underline;
+}
+
+#main .m-box .login-inp {
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+#main .m-box .login-inp ul li {
+  width: 100%;
+  height: 85px;
+  position: relative;
+  margin-bottom: 20px;
+  /*验证码的input*/
+  /*验证码图片*/
+  /*看不清，换一张*/
+  /*提示按钮*/
+  /*提示框*/
+  /*提示框-验证码错误*/
+  /*忘记密码*/
+}
+
+#main .m-box .login-inp ul li input {
+  width: 278px;
+  height: 33px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  color: #999;
+  padding-left: 10px;
+}
+
+#main .m-box .login-inp ul li .txtVerification {
+  width: 145px;
+  float: left;
+}
+
+#main .m-box .login-inp ul li #idcode {
+  width: 135px;
+  height: 38px;
+  float: left;
+  margin-left: 4px;
+  position: relative;
+  /*看不清，换一张*/
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val {
+  display: inline-block;
+  margin: 0 !important;
+  width: 85px;
+  height: 34px;
+  position: absolute;
+  border: solid 1px #000;
+  top: 4px;
+  *top: -3px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-size: 24px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val0 {
+  background-color: #ECFAFB;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val1 {
+  background-color: #FCEFCF;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val2 {
+  background-color: #D0F0DF;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val3 {
+  background-color: #DCDDD8;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val4 {
+  background-color: #F1DEFF;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-idcode-val5 {
+  background-color: #ACE1F1;
+}
+
+#main .m-box .login-inp ul li #idcode .ehong-code-val-tip {
+  display: inline-block;
+  width: 50px;
+  height: 40px;
+  font-size: 13px;
+  color: #a0a0a0;
+  top: 4px;
+  *top: -3px;
+  position: absolute;
+  right: -5px;
+  text-decoration: underline;
+  vertical-align: baseline;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+#main .m-box .login-inp ul li .ico-inp {
+  position: absolute;
+  right: -18px;
+  top: 35%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/reg-jinglingtu.jpg);
+  background-position: -32px -238px;
+  opacity: 0;
+}
+
+#main .m-box .login-inp ul li .inpText {
+  display: none;
+  color: #999;
+  margin-top: 5px;
+  width: 100%;
+  height: 24px;
+  font-size: 13px;
+}
+
+#main .m-box .login-inp ul li .inpText-false {
+  display: none;
+  color: red;
+  margin-top: 5px;
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 13px;
+}
+
+#main .m-box .login-inp ul li .forget {
+  float: right;
+  margin-right: 10px;
+  color: #02b1cb;
+}
+
+#main .m-box .login-inp ul li button {
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: "Microsoft YaHei", 微软雅黑, 黑体;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background: url(../img/reg-jinglingtu.jpg) no-repeat 0px -262px;
+  cursor: pointer;
+}
+
+#main .m-box .login-inp ul li button:hover {
+  opacity: .9;
+}
+
+#main .m-box .three-login {
+  width: 100%;
+  margin-top: -25px;
+  border-top: 1px solid #eceae6;
+  padding-top: 35px;
+  font-size: 13px;
+  color: #000;
+}
+
+#main .m-box .three-login p:nth-child(2) {
+  padding-top: 20px;
+  color: #999;
+}
+
+#main .m-box .three-login p:nth-child(2) span {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  width: 150px;
+}
+
+#main .m-box .three-login p:nth-child(2) span .weixin {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  vertical-align: middle;
+  background: url(../img/reg-jinglingtu.jpg) no-repeat -303px -434px;
+}
+
+#main .m-box .three-login p:nth-child(2) span .weibo {
+  display: inline-block;
+  width: 26px;
+  height: 24px;
+  vertical-align: middle;
+  background: url(../img/reg-jinglingtu.jpg) no-repeat -120px -434px;
+}

@@ -1,0 +1,1588 @@
+@charset "UTF-8";
+body {
+  background: #f5f5f5;
+  color: #666;
+}
+
+a {
+  color: #666;
+}
+
+.ico-down {
+  display: inline-block;
+  width: 8px;
+  height: 6px;
+  background: url(../img/jinglingtu01.png) no-repeat -96px 0px;
+}
+
+/*头部*/
+#header {
+  width: 100%;
+  height: 200px;
+  /*头顶*/
+  /*头中*/
+  /*导航栏*/
+}
+
+#header .header-top {
+  height: 32px;
+  font-size: 12px;
+  font-family: "\5B8B\4F53";
+  line-height: 32px;
+  position: relative;
+  cursor: pointer;
+  /*城市地址*/
+  /*快速导航副级*/
+  /*手机乐峰副级*/
+}
+
+#header .header-top .city01 {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  height: 31px;
+  position: relative;
+}
+
+#header .header-top .city01 a {
+  color: #f52648;
+}
+
+#header .header-top .city-address {
+  width: 300px;
+  height: 280px;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #dfdfdf;
+  top: 31px;
+  z-index: 25;
+  left: 50%;
+  margin-left: -500px;
+  display: none;
+}
+
+#header .header-top .city-address .city02 {
+  position: absolute;
+  background: #fff;
+  left: -1px;
+  top: -32px;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  z-index: 22;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+#header .header-top .city-address .city02 a {
+  color: #f52648;
+}
+
+#header .header-top .city-address ul li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  height: 40px;
+}
+
+#header .header-top .city-address ul li a {
+  color: #666;
+}
+
+#header .header-top .city-address ul li a:hover {
+  color: #f52648;
+}
+
+#header .header-top dl {
+  float: right;
+  /*dl的第二个span 我的订单*/
+  /*第一个span 登录注册*/
+}
+
+#header .header-top dl span {
+  display: inline-block;
+  height: 100%;
+  width: 77px;
+  text-align: center;
+  position: relative;
+  /*手机乐峰图标*/
+  /*我的订单副级*/
+}
+
+#header .header-top dl span .ico-phone {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 9px;
+  left: 1px;
+  background: url(../img/jinglingtu02.png) no-repeat -540px -257px;
+}
+
+#header .header-top dl span .myorder {
+  width: 77px;
+  height: 64px;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #dfdfdf;
+  border-top: none;
+  top: 32px;
+  left: -1px;
+  box-sizing: border-box;
+  z-index: 2;
+  display: none;
+}
+
+#header .header-top dl span .myorder a:hover {
+  color: #f52648;
+}
+
+#header .header-top dl span:nth-child(2):hover {
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+#header .header-top dl span:nth-child(2):hover .myorder {
+  display: block;
+}
+
+#header .header-top dl span:first-child {
+  width: 222px;
+}
+
+#header .header-top dl span:first-child a {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #f52648;
+}
+
+#header .header-top .quick {
+  width: 140px;
+  height: 222px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  top: 31px;
+  left: 50%;
+  margin-left: 256px;
+  z-index: 10;
+  display: none;
+}
+
+#header .header-top .quick a {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+}
+
+#header .header-top .quick a:hover {
+  color: #f52648;
+}
+
+#header .header-top .quick h6 {
+  text-align: center;
+}
+
+#header .header-top .quick h6 img {
+  width: 112px;
+  height: 112px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#header .header-top .quick h6 a {
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #f52648;
+}
+
+#header .header-top .quick .fast {
+  position: absolute;
+  background: #fff;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  right: 62px;
+  top: -32px;
+  z-index: 22;
+  display: inline-block;
+  height: 32px;
+  width: 77px;
+  text-align: center;
+}
+
+#header .header-top .phone {
+  width: 140px;
+  height: 172px;
+  position: absolute;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  top: 31px;
+  left: 50%;
+  margin-left: 365px;
+  z-index: 10;
+  text-align: center;
+  display: none;
+}
+
+#header .header-top .phone .tel02 {
+  position: absolute;
+  background: #fff;
+  border-left: 1px solid #dfdfdf;
+  border-right: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  right: -1px;
+  top: -32px;
+  width: 90px;
+  z-index: 22;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  /*手机乐峰图标*/
+}
+
+#header .header-top .phone .tel02 .ico-phone {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  background: url(../img/jinglingtu02.png) no-repeat -540px -257px;
+}
+
+#header .header-top .phone img {
+  width: 112px;
+  height: 112px;
+  margin-top: 20px;
+}
+
+#header .header-top .phone p:last-child {
+  text-align: right;
+  padding-right: 25px;
+}
+
+#header .header-top .phone p:last-child .apple {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  left: 25px;
+  bottom: 13px;
+  background: url(../img/jinglingtu02.png) no-repeat -534px -285px;
+}
+
+#header .header-top .phone p:last-child .android {
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  position: absolute;
+  left: 50px;
+  bottom: 13px;
+  background: url(../img/jinglingtu02.png) no-repeat -534px -315px;
+}
+
+#header .header-main {
+  width: 100%;
+  height: 130px;
+  background: #fff;
+  /*logo*/
+  /*搜索框*/
+  /*购物车*/
+}
+
+#header .header-main .logo {
+  width: 170px;
+  height: 90px;
+  position: relative;
+  top: 10px;
+  float: left;
+  cursor: pointer;
+  background: url(../img/jinglingtu02.png) no-repeat -125px 0px;
+}
+
+#header .header-main .search {
+  width: 400px;
+  height: 40px;
+  float: left;
+  background-image: url(../img/jinglingtu01.png);
+  background-position: 0px -443px;
+  margin: 35px 0px 0px 130px;
+  position: relative;
+  /*搜索按钮*/
+  /*热门标签*/
+}
+
+#header .header-main .search input {
+  display: inline-block;
+  width: 320px;
+  height: 35px;
+  border: none;
+  color: #666;
+  font-size: 15px;
+  box-sizing: content-box;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+
+#header .header-main .search input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+#header .header-main .search input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+#header .header-main .search input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#header .header-main .search .search-sumbit {
+  position: absolute;
+  display: inline-block;
+  left: 347px;
+  top: 10px;
+  height: 40px;
+  color: #fff;
+  font-family: 'tahoma,arial';
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#header .header-main .search p:last-child {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  width: 100%;
+  height: 24px;
+  font-size: 12px;
+  color: #999;
+}
+
+#header .header-main .search p:last-child a {
+  color: #f52648;
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+#header .header-main .carts01 {
+  float: right;
+  width: 136px;
+  height: 42px;
+  top: 35px;
+  position: relative;
+  cursor: pointer;
+  background: url(../img/jinglingtu01.png) no-repeat 0px -113px;
+}
+
+#header .header-main .carts01 span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+#header .header-main .carts02 {
+  float: right;
+  width: 300px;
+  height: 42px;
+  top: -9px;
+  position: relative;
+  z-index: 22;
+  cursor: pointer;
+  background: url(../img/jinglingtu01.png) no-repeat 0px -155px;
+  display: none;
+}
+
+#header .header-main .carts02 span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+#header .header-main .carts02 .shopping-lists {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  clear: both;
+  border: 1px solid #dfdfdf;
+  box-sizing: border-box;
+  border-top: none;
+  background: #fff;
+  position: absolute;
+  top: 42px;
+  font-size: 14px;
+}
+
+#header .header-main .carts02 .shopping-lists .nohas {
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+}
+
+#header .header-main .carts02 .shopping-lists .has {
+  width: 100%;
+  height: 100%;
+  margin-top: 18px;
+  display: none;
+}
+
+#header .header-main .carts02 .shopping-lists .has table {
+  width: 90%;
+  height: auot;
+  overflow: hidden;
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#header .header-main .carts02 .shopping-lists .has table tr {
+  width: 100%;
+  height: 70px;
+  font-size: 12px;
+}
+
+#header .header-main .carts02 .shopping-lists .has table tr td:nth-child(1) {
+  width: 55px;
+}
+
+#header .header-main .carts02 .shopping-lists .has table tr td:nth-child(2) {
+  width: 170px;
+  padding-left: 5px;
+  overflow: hidden;
+}
+
+#header .header-main .carts02 .shopping-lists .has table tr td:nth-child(3) {
+  width: 20px;
+  padding-left: 5px;
+}
+
+#header .header-main .carts02 .shopping-lists .has table tr td:nth-child(3) b {
+  color: #f52648;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot {
+  width: 90%;
+  height: 80px;
+  font-size: 13px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: 1px dotted #ccc;
+  color: #333;
+  padding-top: 10px;
+  position: relative;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot b {
+  color: #f52648;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot p:nth-child(1) {
+  height: 30px;
+  line-height: 30px;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot p:nth-child(2) b {
+  font-size: 16px;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot p:nth-child(3) {
+  width: 100px;
+  height: 30px;
+  background: url(../img/jinglingtu02.png) no-repeat -304px -84px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+}
+
+#header .header-main .carts02 .shopping-lists .has .hasfoot p:nth-child(3) a {
+  color: #fff;
+}
+
+#header .header-nav {
+  width: 100%;
+  height: 40px;
+  background: #f52648;
+  font-size: 15px;
+  position: relative;
+  /*商品分类菜单*/
+  /*中间导航*/
+  /*导航尾部小图标*/
+  /*下拉菜单*/
+}
+
+#header .header-nav .nav-menu {
+  width: 220px;
+  height: 40px;
+  background: #d62340;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  cursor: default;
+}
+
+#header .header-nav .nav-menu .ico-up {
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  left: 67%;
+  top: 40%;
+  background: url(../img/jinglingtu03.png) no-repeat 0px 0px;
+  transform: rotate(180deg);
+}
+
+#header .header-nav .nav-main {
+  float: left;
+  width: 400px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+#header .header-nav .nav-main a {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  width: 50%;
+}
+
+#header .header-nav .nav-main a:hover {
+  background: #df1738;
+}
+
+#header .header-nav .nav-ico {
+  float: right;
+  width: 119px;
+  height: 40px;
+  position: relative;
+}
+
+#header .header-nav .nav-ico a {
+  display: inline-block;
+  width: 23px;
+  height: 25px;
+  position: absolute;
+}
+
+#header .header-nav .nav-ico a:first-child {
+  background: url(../img/jinglingtu01.png) no-repeat -96px -13px;
+  top: 8px;
+}
+
+#header .header-nav .nav-ico a:nth-child(2) {
+  background: url(../img/jinglingtu01.png) no-repeat -119px -13px;
+  top: 8px;
+  left: 45px;
+}
+
+#header .header-nav .nav-ico a:last-child {
+  background: url(../img/jinglingtu01.png) no-repeat -142px -13px;
+  top: 8px;
+  left: 90px;
+}
+
+#header .header-nav .float-menu {
+  width: 220px;
+  min-height: 360px;
+  background: #f7f7f7;
+  position: absolute;
+  top: 40px;
+  border: 1px solid #eee;
+  border-top: none;
+  box-shadow: 0px 2px 5px #ccc;
+  font-size: 13px;
+  font-family: 'microsoft yahei';
+  z-index: 20;
+  display: none;
+}
+
+#header .header-nav .float-menu dl {
+  height: 109px;
+  width: 190px;
+  padding: 0px 15px;
+  border-bottom: 1px solid #eee;
+  transition: height .3s;
+  position: relative;
+  /*护肤用品副级*/
+  /*彩妆用品副级*/
+  /*美容工具副级*/
+  /*香水香氛副级*/
+  /*个人护理副级*/
+}
+
+#header .header-nav .float-menu dl dt {
+  width: 100%;
+  height: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 22px;
+  color: #2f2f2f;
+  font-weight: bold;
+  position: relative;
+}
+
+#header .header-nav .float-menu dl dt span {
+  display: inline-block;
+  padding-left: 35px;
+}
+
+#header .header-nav .float-menu dl dt .ico-hufu {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/jinglingtu03.png) no-repeat -11px 0px;
+}
+
+#header .header-nav .float-menu dl dt .ico-caizhuang {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/jinglingtu03.png) no-repeat -27px 0px;
+}
+
+#header .header-nav .float-menu dl dt .ico-meirong {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/jinglingtu03.png) no-repeat -54px 0px;
+}
+
+#header .header-nav .float-menu dl dt .ico-xiangshui {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/jinglingtu03.png) no-repeat -73px 0px;
+}
+
+#header .header-nav .float-menu dl dt .ico-geren {
+  display: inline-block;
+  width: 11px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/jinglingtu03.png) no-repeat -43px 0px;
+}
+
+#header .header-nav .float-menu dl dd {
+  float: left;
+  width: 32%;
+  padding-right: 2px;
+}
+
+#header .header-nav .float-menu dl dd a {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+}
+
+#header .header-nav .float-menu dl:hover {
+  background: #fff;
+}
+
+#header .header-nav .float-menu dl .hufu-main {
+  width: 692px;
+  height: 187px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  font-size: 12px;
+  font-family: 'tahoma,arial';
+  display: none;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-one li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .hufu-main .hufu-main-two li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main {
+  width: 692px;
+  height: 187px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  font-size: 12px;
+  font-family: 'tahoma,arial';
+  display: none;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-one li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .cosmetic-main .cosmetic-main-two li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main {
+  width: 692px;
+  height: 187px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  font-size: 12px;
+  font-family: 'tahoma,arial';
+  display: none;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-one li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .cosmetology-main .cosmetology-main-two li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .perfume-main {
+  width: 692px;
+  height: 187px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  font-size: 12px;
+  font-family: 'tahoma,arial';
+  display: none;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-one li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .perfume-main .perfume-main-two li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .oneself-main {
+  width: 692px;
+  height: 187px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 2px 3px #999;
+  position: absolute;
+  left: 220px;
+  top: 0;
+  font-size: 12px;
+  font-family: 'tahoma,arial';
+  display: none;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-one li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two {
+  float: left;
+  width: 50%;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li {
+  width: 100%;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dt {
+  float: left;
+  width: 19%;
+  height: 42px;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dt a {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  color: #2f2f2f;
+  font-size: 13px;
+  margin: 0px 10px;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dt a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dd {
+  float: left;
+  width: 65%;
+  vertical-align: middle;
+  margin: 11px 0px 0px 25px;
+  height: 100%;
+  border-bottom: 1px dotted #ccc;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dd a {
+  display: inline-block;
+  padding-right: 16px;
+  width: initial;
+  color: #999;
+}
+
+#header .header-nav .float-menu dl .oneself-main .oneself-main-two li dd a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu dl:nth-child(1):hover .hufu-main {
+  display: block;
+}
+
+#header .header-nav .float-menu dl:nth-child(2):hover .cosmetic-main {
+  display: block;
+}
+
+#header .header-nav .float-menu dl:nth-child(3):hover .cosmetology-main {
+  display: block;
+}
+
+#header .header-nav .float-menu .ico-xia {
+  display: inline-block;
+  width: 60px;
+  height: 33px;
+  background: url(../img/ico-xia.png) no-repeat;
+  margin-left: 90px;
+  position: absolute;
+  bottom: -15px;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu .shopping-lists-all {
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  line-height: 33px;
+  color: #999;
+}
+
+#header .header-nav .float-menu .perfume,
+#header .header-nav .float-menu .oneself {
+  height: 0;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu:hover .perfume,
+#header .header-nav .float-menu:hover .oneself {
+  height: 109px;
+  overflow: initial;
+}
+
+#header .header-nav .float-menu:hover .shopping-lists-all {
+  height: 33px;
+}
+
+#header .header-nav .float-menu:hover .ico-xia {
+  height: 0;
+  overflow: hidden;
+}
+
+#header .header-nav .float-menu a:hover {
+  color: #f52648;
+}
+
+#header .header-nav .float-menu:hover {
+  box-shadow: 0px 2px 7px #999;
+}
+
+/*尾部*/
+#bottom {
+  width: 100%;
+  height: 600px;
+  background: #fff;
+  /*尾部中间内容*/
+  /*尾尾*/
+}
+
+#bottom .container {
+  height: 180px;
+}
+
+#bottom .btm-m-one {
+  height: 138px;
+  width: 100%;
+  border-bottom: 1px dotted #c1c1c1;
+}
+
+#bottom .btm-m-one ul li {
+  width: 215px;
+  height: 79px;
+  float: left;
+  margin: 30px auto;
+  margin-left: 107px;
+}
+
+#bottom .btm-m-one .server01 {
+  background: url(../img/jinglingtu01.png) no-repeat 0px -200px;
+}
+
+#bottom .btm-m-one .server02 {
+  background: url(../img/jinglingtu01.png) no-repeat 0px -280px;
+}
+
+#bottom .btm-m-one .server03 {
+  background: url(../img/jinglingtu01.png) no-repeat 0px -362px;
+}
+
+#bottom .btm-m-two {
+  width: 100%;
+  height: 250px;
+  border-bottom: 1px dotted #c1c1c1;
+}
+
+#bottom .btm-m-two .btm-logo {
+  width: 174px;
+  height: 200px;
+  margin-top: 40px;
+  float: left;
+  font-size: 12px;
+}
+
+#bottom .btm-m-two .btm-logo p:first-child {
+  height: 112px;
+  width: 100%;
+  background: url(../img/jinglingtu02.png) no-repeat -320px -256px;
+}
+
+#bottom .btm-m-two .btm-main {
+  float: left;
+  margin-top: 60px;
+  margin-left: 30px;
+  font-size: 12px;
+  font-family: 'Microsoft YaHei';
+}
+
+#bottom .btm-m-two .btm-main dl {
+  float: left;
+  margin-right: 80px;
+}
+
+#bottom .btm-m-two .btm-main dl dt {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+#bottom .btm-m-two .btm-main dl dd {
+  margin-bottom: 10px;
+}
+
+#bottom .btm-m-two .btm-main dl .lefeng-erweima {
+  width: 87px;
+  height: 87px;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  background: url(../img/jinglingtu02.png) no-repeat -228px -367px;
+}
+
+#bottom .btm-m-three {
+  font-size: 13px;
+  color: #999;
+}
+
+#bottom .btm-m-three p {
+  margin-bottom: 20px;
+}
+
+#bottom .btm-m-three .btm-about {
+  margin: 30px 0px;
+}
+
+#bottom .btm-m-three .btm-about a {
+  color: #000;
+  padding: 27px;
+  font-size: 14px;
+}
+
+#bottom .btm-m-three p:nth-child(2) {
+  margin-left: 40px;
+}
+
+#bottom .btm-m-three p:nth-child(2) span:first-child {
+  font-weight: 'tahoma,arial';
+}
+
+#bottom .btm-m-three p:nth-child(2) a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#bottom .btm-m-three p:nth-child(2) img {
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
+}
+
+#bottom .btm-m-three p:nth-child(3) {
+  margin-left: 135px;
+}
+
+#bottom .btm-m-three p:nth-child(3) span {
+  margin-right: 20px;
+}
+
+#bottom .btm-m-three p:nth-child(4) {
+  margin-left: 150px;
+  height: 36px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a {
+  display: inline-block;
+  width: 110px;
+  height: 36px;
+  padding-right: 20px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a:nth-child(1) {
+  background: url(../img/jinglingtu02.png) no-repeat -191px -205px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a:nth-child(2) {
+  background: url(../img/jinglingtu02.png) no-repeat -191px -242px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a:nth-child(3) {
+  background: url(../img/jinglingtu02.png) no-repeat -191px -277px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a:nth-child(4) {
+  background: url(../img/jinglingtu02.png) no-repeat -191px -315px;
+}
+
+#bottom .btm-m-three p:nth-child(4) a:nth-child(5) {
+  background: url(../img/hulian.png) no-repeat;
+}
+
+/*加入购物车成功*/
+.addsucces {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  width: 508px;
+  padding: 50px 10px 50px;
+  background: #fff;
+  border: 1px solid #e2d3aa;
+  overflow: visible;
+  border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  margin-left: -264px;
+  margin-top: -125px;
+}
+
+.addsucces .sum {
+  padding: 10px 0 0 150px;
+  overflow: hidden;
+  background: white;
+  color: #999999;
+}
+
+.addsucces .sum h3 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 35px;
+  color: #333;
+  font-family: Microsoft YaHei;
+}
+
+.addsucces .sum p {
+  line-height: 45px;
+  font-size: 14px;
+}
+
+.addsucces .sum p b {
+  color: #333;
+  font-weight: bold;
+}
+
+.addsucces .sum p a {
+  color: #ca8516;
+  font-size: 12px;
+}
+
+.addsucces .sum .pay {
+  margin: 2px 15px 5px 0;
+  background: url(../img/jiesuan.png) no-repeat 0 0;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  width: 110px;
+  text-indent: -9999px;
+}
+
+.addsucces .sum .ico-succ {
+  position: absolute;
+  display: inline-block;
+  top: 61px;
+  left: 115px;
+  width: 37px;
+  height: 35px;
+  display: inline-block;
+  margin-right: 40px;
+  background: url(../img/SorF.gif) no-repeat 0px 0px;
+}
+
+.addsucces .ico-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: url(../img/jinglingtu01.png) no-repeat -200px 0px;
+  cursor: pointer;
+}

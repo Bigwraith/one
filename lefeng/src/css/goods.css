@@ -1,0 +1,771 @@
+@charset "UTF-8";
+#main {
+  width: 100%;
+  /*头部*/
+}
+
+#main .m-header {
+  height: auto;
+  width: 100%;
+  font-size: 13px;
+}
+
+#main .m-header .mhtop {
+  height: 60px;
+  line-height: 60px;
+}
+
+#main .m-header .mhtop a {
+  color: #999;
+}
+
+#main .m-header .mhtop .ico-jiantou {
+  color: #999;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#main .m-header .mhtop .mhname {
+  color: red;
+}
+
+#main .m-header .mhcenter {
+  height: 570px;
+  background: #fff;
+}
+
+#main .m-header .mhcenter .mhcleft {
+  float: left;
+  width: 600px;
+  margin-left: 30px;
+  margin-top: 25px;
+  color: #999;
+  font-size: 15px;
+}
+
+#main .m-header .mhcenter .mhcleft h2 {
+  width: 100%;
+  height: 27px;
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Microsoft YaHei, simsun';
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier {
+  width: 600px;
+  height: 347px;
+  position: relative;
+  border: 1px solid #eee;
+  margin-top: 10px;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .clearfix:before, #main .m-header .mhcenter .mhcleft .magnifier .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-container {
+  width: 600px;
+  height: 347px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-container .images-cover {
+  width: 600px;
+  height: 347px;
+  position: relative;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-container .images-cover img {
+  width: 600px;
+  height: 347px;
+  background-size: cover;
+  position: absolute;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-container .move-view {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-image: url("../img/move-box.png");
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly {
+  height: 92px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 15px;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-btn {
+  position: absolute;
+  font-family: "宋体";
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -40px;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-btn span {
+  line-height: 80px;
+  height: 80px;
+  width: 20px;
+  background-color: #6e6e6e;
+  color: #fff;
+  display: block;
+  z-index: 9998;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-btn .magnifier-btn-left {
+  float: left;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-btn .magnifier-btn-right {
+  float: right;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line {
+  position: relative;
+  overflow: hidden;
+  height: 92px;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line ul {
+  display: block;
+  font-size: 0;
+  width: 10000%;
+  position: absolute;
+  margin-left: 20px;
+  left: 0;
+  z-index: 9997;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line ul li {
+  float: left;
+  width: 100px;
+  cursor: pointer;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line ul li .small-img {
+  height: 78px;
+  padding: 1px;
+  margin: 5px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line ul li .small-img img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-assembly .magnifier-line ul .active .small-img {
+  border-color: #666;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: 322px;
+  top: 0;
+  z-index: 9999;
+  background-color: #fff;
+  display: none;
+  overflow: hidden;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .magnifier-view img {
+  display: block;
+}
+
+#main .m-header .mhcenter .mhcleft .magnifier .animation03 {
+  transition: all 0.3s ease-in 0.1s;
+  -ms-transition: all 0.3s ease-in 0.1s;
+  -moz-transition: all 0.3s ease-in 0.1s;
+  -webkit-transition: all 0.3s ease-in 0.1s;
+  -o-transition: all 0.3s ease-in 0.1s;
+}
+
+#main .m-header .mhcenter .mhcright {
+  float: left;
+  margin-left: 50px;
+  width: 310px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(1) {
+  height: 105px;
+  margin-top: 25px;
+  border-bottom: 1px dotted #ccc;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(1) img {
+  height: 43px;
+  width: 98px;
+  float: right;
+  margin-top: 35px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) {
+  height: 160px;
+  border-bottom: 1px dotted #ccc;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  color: #999;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dt {
+  float: left;
+  width: 20%;
+  height: 55px;
+  text-align: left;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl .prices {
+  line-height: 68px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd {
+  float: left;
+  width: 80%;
+  position: relative;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd .ico-price {
+  color: red;
+  font-size: 14px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd b {
+  color: red;
+  font-size: 32px;
+  font-family: ' Arial,Microsoft YaHei,simsun';
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd .disc {
+  width: 35px;
+  height: 18px;
+  color: #fff;
+  background: red;
+  padding: 1px 3px;
+  margin-left: 10px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd .oldprice {
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd .mianyou {
+  display: inline-block;
+  width: 39px;
+  height: 23px;
+  background: url(../img/goods-lingjingtu02.png) no-repeat -117px 0px;
+  position: absolute;
+  top: 15px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(2) dl dd .baoyou {
+  margin-left: 50px;
+  color: #666;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  color: #999;
+  margin-top: 20px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl dt {
+  float: left;
+  width: 20%;
+  height: 55px;
+  text-align: left;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl dd {
+  width: 73%;
+  float: left;
+  padding-left: 20px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl dd .plus,
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl dd .subtract {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  float: left;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl dd textarea {
+  width: 40px;
+  height: 25px;
+  float: left;
+  margin-top: 12px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl .prompt {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  display: none;
+  color: red;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl .add-carts {
+  width: 176px;
+  height: 45px;
+  display: inline-block;
+  background: url(../img/goods-jinglingtu03.png) no-repeat -145px 0px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl .add-carts:hover {
+  background-position: -145px -45px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl .gain {
+  height: 17px;
+  line-height: 17px;
+  margin-top: 5px;
+}
+
+#main .m-header .mhcenter .mhcright li:nth-child(3) dl .gain .gain-number {
+  color: red;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox {
+  width: 100%;
+  height: 50px;
+  margin-top: 75px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share {
+  width: 65px;
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share:hover .share_uls {
+  opacity: 1;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .ico-lianjie {
+  display: inline-block;
+  float: left;
+  width: 14px;
+  height: 16px;
+  background: url(../img/goods-jinglingtu.png) no-repeat -179px -382px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share b {
+  float: left;
+  padding-top: 1px;
+  padding-right: 15px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 25px;
+  background: #fff;
+  top: 8px;
+  left: -15px;
+  border: 1px solid #e8dcbb;
+  opacity: 0;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls .ico-shareup {
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 8px dashed transparent;
+  border-bottom: 8px solid #e8dcbb;
+  top: -16px;
+  left: 37px;
+  z-index: 2;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  float: left;
+  margin-left: 5px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls .sweibo {
+  background: url(../img/goods-jinglingtu.png) no-repeat 0px -382px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls .sxinlang {
+  background: url(../img/goods-jinglingtu.png) no-repeat -21px -382px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls .sqq {
+  background: url(../img/goods-jinglingtu.png) no-repeat -42px -382px;
+}
+
+#main .m-header .mhcenter .mhcright .sharebox .share .share_uls .sweixin {
+  background: url(../img/goods-jinglingtu.png) no-repeat -64px -382px;
+}
+
+#main .m-mains {
+  height: auto;
+  overflow: hidden;
+  clear: both;
+  /*中间承诺和详情*/
+  /*猜你喜欢*/
+}
+
+#main .m-mains .m-main {
+  width: 758px;
+  background: #fff;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  float: left;
+  /*详情*/
+  /*承诺*/
+}
+
+#main .m-mains .m-main .m-nav {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #fafafa;
+  border: 1px solid #e3e3e3;
+  position: relative;
+}
+
+#main .m-mains .m-main .m-nav .nav-left {
+  float: left;
+  display: inline-block;
+  width: 60%;
+  height: 50px;
+}
+
+#main .m-mains .m-main .m-nav .nav-left a {
+  display: inline-block;
+  width: 65px;
+  height: 46px;
+  padding: 0px 40px;
+  font-weight: bold;
+  font-family: 'tahoma,arial';
+  font-size: 14px;
+}
+
+#main .m-mains .m-main .m-nav .nav-left .now {
+  color: red;
+  border-top: 4px solid red;
+  background: #fff;
+}
+
+#main .m-mains .m-main .m-nav .nav-right {
+  display: inline-block;
+  width: 40%;
+  float: left;
+  height: 50px;
+  opacity: 0;
+}
+
+#main .m-mains .m-main .m-nav .nav-right b {
+  font-size: 24px;
+  color: red;
+  margin-right: 10px;
+}
+
+#main .m-mains .m-main .m-nav .nav-right .oldprice02 {
+  color: #666;
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
+  text-decoration: line-through;
+}
+
+#main .m-mains .m-main .m-nav .nav-right .add-carts02 {
+  display: inline-block;
+  width: 110px;
+  height: 28px;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 10px;
+  background: url(../img/goods-jinglingtu03.png) no-repeat -175px -206px;
+}
+
+#main .m-mains .m-main .m-nav .smallshow {
+  position: absolute;
+  width: 275px;
+  border-top: none;
+  padding: 0 15px 15px;
+  box-shadow: 0 3px 3px #ccc;
+  background-color: #fff;
+  right: 0;
+  top: 42px;
+  font-size: 12px;
+  display: none;
+}
+
+#main .m-mains .m-main .m-nav .smallshow dt {
+  float: left;
+  margin-top: 5px;
+}
+
+#main .m-mains .m-main .m-nav .smallshow dd {
+  display: inline-block;
+  float: left;
+  width: 166px;
+  font-family: 'Microsoft YaHei';
+  line-height: 22px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+#main .m-mains .m-main .m-nav .smallshow dd .tip01 {
+  margin-top: 30px;
+  font-size: 12px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+#main .m-mains .m-main .m-nav .smallshow dd .tip02 {
+  float: right;
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#main .m-mains .m-main .detail {
+  width: 758px;
+  padding-left: 38px;
+}
+
+#main .m-mains .m-main .detail .detail-top {
+  width: 90%;
+  height: 310px;
+  margin-top: 20px;
+}
+
+#main .m-mains .m-main .detail table {
+  width: 665px;
+  margin-bottom: 20px;
+}
+
+#main .m-mains .m-main .detail table tr {
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  font-size: 14px;
+  color: #333;
+  background: #fafafa;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+#main .m-mains .m-main .detail table tr td {
+  padding: 8px 10px;
+}
+
+#main .m-mains .m-main .detail table tr td:nth-child(1) {
+  background: #f2f2f2;
+  width: 90px;
+}
+
+#main .m-mains .m-main .f-service {
+  width: 710px;
+  margin-top: 20px;
+  margin-left: 38px;
+}
+
+#main .m-mains .m-main .f-service h4 {
+  height: 50px;
+  margin-bottom: 30px;
+  background: url(../img/promise.jpg) no-repeat;
+}
+
+#main .m-mains .m-main .f-service ul {
+  height: 157px;
+  background: url(../img/pro.jpg) no-repeat bottom left;
+}
+
+#main .m-mains .m-main .f-service ul li {
+  width: 142px;
+  height: 88px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+
+#main .m-mains .m-main .f-service ul li i {
+  display: inline-block;
+  width: 72px;
+  height: 61px;
+}
+
+#main .m-mains .m-main .f-service ul .f-service-up {
+  background: url(../img/f-service-up.png) no-repeat bottom center;
+}
+
+#main .m-mains .m-main .f-service ul .f-service01 {
+  background: url(../img/goods-jinglingtu03.png) no-repeat -72px -183px;
+}
+
+#main .m-mains .m-main .f-service ul .f-service02 {
+  background: url(../img/goods-jinglingtu03.png) no-repeat 0px -122px;
+}
+
+#main .m-mains .m-main .f-service ul .f-service03 {
+  background: url(../img/goods-jinglingtu03.png) no-repeat 0px -61px;
+}
+
+#main .m-mains .m-main .f-service ul .f-service04 {
+  background: url(../img/goods-jinglingtu03.png) no-repeat 0px -244px;
+}
+
+#main .m-mains .m-main .f-service ul .f-service05 {
+  background: url(../img/goods-jinglingtu03.png) no-repeat 0px 0px;
+}
+
+#main .m-mains .m-main .f-service .f-service-con {
+  width: 640px;
+  padding: 20px 30px;
+}
+
+#main .m-mains .m-main .f-service .f-service-con img {
+  width: 640px;
+}
+
+#main .m-mains .like {
+  width: 225px;
+  height: auto;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+#main .m-mains .like h3 {
+  width: 93%;
+  height: 50px;
+  line-height: 50px;
+  background: #fafafa;
+  border: 1px solid #e3e3e3;
+  position: relative;
+  padding-left: 15px;
+}
+
+#main .m-mains .like dl {
+  padding-left: 15px;
+  font-size: 14px;
+  border-bottom: 1px dotted #ccc;
+  cursor: pointer;
+}
+
+#main .m-mains .like dl dt {
+  margin-top: 10px;
+}
+
+#main .m-mains .like dl dd {
+  margin-top: 5px;
+  padding-right: 10px;
+  height: 90px;
+}
+
+#main .m-mains .like dl dd p:nth-child(1) {
+  height: 40px;
+  overflow: hidden;
+}
+
+#main .m-mains .like dl dd p:nth-child(2) {
+  margin-left: 15px;
+  margin-top: 10px;
+  cursor: text;
+}
+
+#main .m-mains .like dl dd p:nth-child(2) b {
+  color: red;
+  font-size: 18px;
+}
+
+#main .m-mains .like dl dd p:nth-child(2) span {
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+
+/*回到顶部*/
+#back-top {
+  width: 52px;
+  height: 62px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  margin-left: 520px;
+  bottom: 100px;
+  background: #fff;
+  display: none;
+}
+
+#back-top .scroll-top {
+  display: inline-block;
+  width: 27px;
+  height: 39px;
+  margin: 12px;
+  background: url(../img/jinglingtu03.png) no-repeat -229px -241px;
+}
+
+#back-top:hover {
+  background: #e5e4e4;
+}

@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/*轮播图*/
+#banner {
+  height: 360px;
+  position: relative;
+}
+
+#banner .b-lists {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#banner .b-lists div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#banner .b-lists .b1 {
+  background: url(../img/b1.jpg) no-repeat center;
+}
+
+#banner .b-lists .b2 {
+  background: url(../img/b2.jpg) no-repeat center;
+}
+
+#banner .b-lists .b3 {
+  background: url(../img/b3.jpg) no-repeat center;
+}
+
+#banner .b-lists .b4 {
+  background: url(../img/b4.jpg) no-repeat center;
+}
+
+#banner .b-lists .b5 {
+  background: url(../img/b5.jpg) no-repeat center;
+}
+
+#banner .b-lists .b6 {
+  background: url(../img/b6.jpg) no-repeat center;
+}
+
+#banner .b-btns {
+  position: absolute;
+  left: 50%;
+  bottom: 3px;
+  width: 144px;
+  z-index: 10;
+  height: 14px;
+  margin-left: 359px;
+}
+
+#banner .b-btns i {
+  display: inline-block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: #333;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#banner .b-btns .on {
+  background: red;
+}
+
+/*中间*/
+#main {
+  width: 100%;
+  /*品牌特卖*/
+  /*爆款尝鲜*/
+}
+
+#main .sale {
+  width: 100%;
+  margin-top: 5px;
+}
+
+#main .sale h3 {
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #f99c17;
+  position: relative;
+}
+
+#main .sale h3 i {
+  display: inline-block;
+  width: 125px;
+  height: 40px;
+  background: url(../img/jinglingtu03.png) no-repeat 0px -65px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#main .sale h3 span {
+  position: absolute;
+  left: 150px;
+  bottom: 12px;
+  font-size: 18px;
+  color: #999;
+  font-weight: 'tahoma,arial';
+}
+
+#main .sale h3 span b {
+  color: red;
+}
+
+#main .sale h3 .sale-more {
+  position: absolute;
+  right: 3px;
+  bottom: 15px;
+  font-size: 12px;
+  color: #999;
+}
+
+#main .sale .sale-main {
+  margin-top: 10px;
+}
+
+#main .sale .sale-main ul li {
+  width: 50%;
+  height: 280px;
+  float: left;
+}
+
+#main .sale .sale-main ul li p:first-child {
+  height: 228px;
+}
+
+#main .sale .sale-main ul li p:first-child img {
+  width: 492px;
+  height: 216px;
+  border-radius: 3px;
+}
+
+#main .sale .sale-main ul li p:first-child img:hover {
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #999;
+}
+
+#main .sale .sale-main ul li p:last-child {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 15px;
+  color: #4d4d4d;
+  margin: 5px;
+}
+
+#main .sale .sale-main ul li p:last-child span:nth-child(1) {
+  color: #F52648;
+}
+
+#main .fresh {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#main .fresh h3 {
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #c835bf;
+  position: relative;
+}
+
+#main .fresh h3 i {
+  display: inline-block;
+  width: 125px;
+  height: 40px;
+  background: url(../img/jinglingtu03.png) no-repeat 0px -263px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+#main .fresh .fresh-main ul li {
+  background: #fff;
+  float: left;
+  width: 226px;
+  height: 338px;
+  margin: 15px 23px 15px 0px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+#main .fresh .fresh-main ul li p {
+  width: 200px;
+  margin: 0px 13px;
+  font-size: 15px;
+}
+
+#main .fresh .fresh-main ul li p img {
+  width: 200px;
+  height: 253px;
+}
+
+#main .fresh .fresh-main ul li p a {
+  color: #666;
+}
+
+#main .fresh .fresh-main ul li p:nth-child(2) {
+  height: 43px;
+  overflow: hidden;
+}
+
+#main .fresh .fresh-main ul li p:nth-child(2) b {
+  color: #F52648;
+  font-size: 16px;
+}
+
+#main .fresh .fresh-main ul li p:last-child {
+  height: 38px;
+  position: relative;
+}
+
+#main .fresh .fresh-main ul li p:last-child span {
+  margin-top: 10px;
+  float: left;
+}
+
+#main .fresh .fresh-main ul li p:last-child span:nth-child(1) {
+  font-size: 18px;
+  font-weight: 'Arial, Helvetica, sans-serif';
+  color: #666;
+}
+
+#main .fresh .fresh-main ul li p:last-child span:nth-child(2) {
+  font-size: 14px;
+  padding-top: 6px;
+  font-weight: 'Arial, Helvetica, sans-serif';
+  color: #999;
+  text-decoration: line-through;
+}
+
+#main .fresh .fresh-main ul li p:last-child span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  width: 96px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0;
+  background: url(../img/jinglingtu01.png) no-repeat 0px 0px;
+}
+
+#main .fresh .fresh-main ul li p:last-child span:nth-child(3):hover {
+  background: url(../img/jinglingtu01.png) no-repeat 0px -28px;
+}
+
+#main .fresh .fresh-main ul li:hover img {
+  opacity: .4;
+}
+
+#main .fresh .fresh-main ul li:hover #add-carts {
+  opacity: 1;
+}
+
+/*APP*/
+#app {
+  height: 305px;
+  background: #f62648;
+}
+
+#app .app-photo {
+  width: 100%;
+  height: 100%;
+  background: url(../img/app-down.jpg) no-repeat;
+}
+
+/*回到顶部*/
+#back-top {
+  width: 52px;
+  height: 62px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  position: fixed;
+  left: 50%;
+  margin-left: 520px;
+  bottom: 100px;
+  background: #fff;
+}
+
+#back-top .scroll-top {
+  display: inline-block;
+  width: 27px;
+  height: 39px;
+  margin: 12px;
+  background: url(../img/jinglingtu03.png) no-repeat -229px -241px;
+}
+
+#back-top:hover {
+  background: #e5e4e4;
+}
+
+/*左边悬浮*/
+#lf-header {
+  width: 144px;
+  height: 378px;
+  position: fixed;
+  left: 50%;
+  margin-left: -650px;
+  top: 30%;
+  display: none;
+}
+
+#lf-header p:nth-child(1) {
+  position: relative;
+  height: 208px;
+  background: url(../img/jinglingtu03.png) no-repeat -118px -29px;
+}
+
+#lf-header i {
+  display: inline-block;
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  right: 4px;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+}
+
+#lf-header p:nth-child(2) {
+  width: 67px;
+  height: 75px;
+  background-image: url(../img/jinglingtu03.png);
+  background-position: 0px -306px;
+  margin: 10px 0px 0px 60px;
+  cursor: pointer;
+}
+
+#lf-header p:nth-child(3) {
+  width: 67px;
+  height: 75px;
+  background-image: url(../img/jinglingtu03.png);
+  background-position: -67px -381px;
+  margin: 0px 0px 0px 60px;
+  cursor: pointer;
+}
+
+/*首层悬浮弹窗*/
+#regionalTipsBk {
+  background: #000;
+  width: 100%;
+  height: 7150px;
+  opacity: .7;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/*悬浮地址框*/
+#regionalTipBox {
+  position: absolute;
+  z-index: 110;
+  width: 540px;
+  height: 355px;
+  top: 50%;
+  left: 50%;
+  margin-left: -270px;
+  margin-top: -150px;
+  background: #fcfbf8;
+  border-radius: 5px;
+  display: none;
+}
+
+#regionalTipBox .rtTitle {
+  height: 54px;
+  width: 100%;
+  line-height: 54px;
+  font-size: 16px;
+  text-indent: 23px;
+  border-bottom: 1px dashed #baa780;
+}
+
+#regionalTipBox .rtTable {
+  width: 100%;
+  font-weight: '\5B8B\4F53';
+}
+
+#regionalTipBox .rtTable dl {
+  border-bottom: 1px solid #ddd6c8;
+  color: #333;
+  height: 42px;
+  width: 100%;
+  font-size: 15px;
+}
+
+#regionalTipBox .rtTable dl dt {
+  float: left;
+  width: 100px;
+  height: 100%;
+  border-right: 1px solid #ddd6c8;
+  background: #f1eee8;
+  line-height: 42px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#regionalTipBox .rtTable dl dd {
+  float: left;
+}
+
+#regionalTipBox .rtTable dl dd a {
+  display: inline-block;
+  margin: 10px 5px 0px 15px;
+  padding: 2px 6px;
+}
+
+#regionalTipBox .rtTable dl dd a:hover {
+  background: #ddd6c8;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px 5px 0px 15px;
+}
